@@ -1,6 +1,5 @@
 .
-|-- AstroTech_Web.tree
-`-- ecosistema-negocios-autos
+|-- ecosistema-negocios-autos
     |-- backend-compartido
     |   |-- app
     |   |   |-- autenticacion
