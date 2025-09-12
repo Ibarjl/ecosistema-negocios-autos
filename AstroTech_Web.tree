@@ -1,0 +1,31 @@
+.
+|-- AstroTech_Web.tree
+`-- ecosistema-negocios-autos
+    |-- backend-compartido
+    |   |-- app
+    |   |   |-- autenticacion
+    |   |   |-- comun
+    |   |   |-- corporativo
+    |   |   |-- mercado
+    |   |   |-- modelos
+    |   |   `-- servicios
+    |   |-- migraciones
+    |   `-- pruebas
+    |-- compartido
+    |   |-- constantes
+    |   |-- esquemas
+    |   `-- tipos
+    |-- corporativo
+    |   |-- frontend
+    |   |   |-- componentes
+    |   |   |-- estados
+    |   |   |-- estilos
+    |   |   `-- paginas
+    |   `-- recursos
+    `-- mercado
+        |-- frontend
+        |   |-- componentes
+        |   |-- estados
+        |   |-- estilos
+        |   `-- paginas
+        `-- recursos
