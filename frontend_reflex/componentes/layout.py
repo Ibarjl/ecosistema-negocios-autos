@@ -1,2 +1,5 @@
-# Navbar y layout base
-# Aquí va el código del layout base.
+"""
+Componente Layout
+
+Define la estructura y disposición general de la interfaz del marketplace.
+"""

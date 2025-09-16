@@ -1,2 +1,5 @@
-# Card de vehículo
-# Aquí va el código de la card de vehículo.
+"""
+Componente VehiculoCard
+
+Representa la tarjeta visual de un vehículo en el listado del marketplace.
+"""

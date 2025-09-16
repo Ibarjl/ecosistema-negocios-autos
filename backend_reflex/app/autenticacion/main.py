@@ -11,17 +11,20 @@ vehiculos_db = [
 
 @app.get("/")
 def hola():
+    """Endpoint raíz que retorna un mensaje de bienvenida."""
     return {"mensaje": "Mi primer mensaje con API"}
 
 
 
 @app.get("/vehiculos")
 def visualizar_vehiculos():
+    """Devuelve la lista de vehículos disponibles en la base de datos."""
     return vehiculos_db
 
 
 @app.get("/vehiculos/{mi_id}")
 def obtener_vehiculo(vehiculo_id: int):
+    """Busca y retorna un vehículo por su ID. Si no existe, retorna un error."""
     for vehiculo in vehiculos_db:
         if vehiculo["id"]==vehiculo_id:
             return vehiculo
