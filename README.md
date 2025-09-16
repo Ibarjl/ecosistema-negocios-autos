@@ -22,6 +22,7 @@ La estructura está pensada para facilitar el desarrollo colaborativo, la reutil
 
 > **¿Primera vez en el proyecto?**
 > Para instrucciones detalladas, ejemplos de código y tareas por rol, revisa el archivo [Quick_Start.md](./Quick_Start.md).
+> Para instrucciones de Reflex, practicar código y aprender, revisa el archivo [Aprendizaje_reflex.md](./Aprendizaje_reflex.md).
 
 ---
 
