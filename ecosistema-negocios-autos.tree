@@ -1,30 +1,78 @@
 .
-|-- ecosistema-negocios-autos
-    |-- backend-compartido
-    |   |-- app
-    |   |   |-- autenticacion
-    |   |   |-- comun
-    |   |   |-- corporativo
-    |   |   |-- mercado
-    |   |   |-- modelos
-    |   |   `-- servicios
-    |   |-- migraciones
-    |   `-- pruebas
-    |-- compartido
-    |   |-- constantes
-    |   |-- esquemas
-    |   `-- tipos
-    |-- corporativo
-    |   |-- frontend
-    |   |   |-- componentes
-    |   |   |-- estados
-    |   |   |-- estilos
-    |   |   `-- paginas
-    |   `-- recursos
-    `-- mercado
-        |-- frontend
-        |   |-- componentes
-        |   |-- estados
-        |   |-- estilos
-        |   `-- paginas
-        `-- recursos
+|-- README.md
+|-- backend_reflex
+|   |-- app
+|   |   |-- autenticacion
+|   |   |   |-- README.md
+|   |   |   |-- __pycache__
+|   |   |   |   `-- main.cpython-313.pyc
+|   |   |   `-- main.py
+|   |   |-- comun
+|   |   |   `-- README.md
+|   |   |-- corporativo
+|   |   |   `-- README.md
+|   |   |-- mercado
+|   |   |   `-- README.md
+|   |   |-- modelos
+|   |   |   |-- README.md
+|   |   |   |-- transaccion.py
+|   |   |   |-- usuario.py
+|   |   |   `-- vehiculo.py
+|   |   `-- servicios
+|   |       `-- README.md
+|   |-- compartido
+|   |   |-- constantes
+|   |   |   |-- README.md
+|   |   |   `-- tipos_motor.py
+|   |   |-- esquemas
+|   |   |   `-- README.md
+|   |   `-- tipos
+|   |       `-- README.md
+|   |-- migraciones
+|   |   `-- README.md
+|   `-- pruebas
+|       |-- README.md
+|       |-- test_auth.py
+|       |-- test_checkout.py
+|       `-- test_vehiculos.py
+|-- ecosistema-negocios-autos.tree
+|-- frontend_reflex
+|   |-- componentes
+|   |   |-- README.md
+|   |   |-- checkout_form.py
+|   |   |-- filtros_vehiculos.py
+|   |   |-- layout.py
+|   |   `-- vehiculo_card.py
+|   |-- estados
+|   |   |-- README.md
+|   |   |-- checkout.py
+|   |   `-- vehiculos.py
+|   |-- estilos
+|   |   |-- README.md
+|   |   `-- main.css
+|   |-- frontend
+|   |   |-- componentes
+|   |   |   `-- README.md
+|   |   |-- estados
+|   |   |   `-- README.md
+|   |   |-- estilos
+|   |   |   `-- README.md
+|   |   `-- paginas
+|   |       `-- README.md
+|   |-- mercado
+|   |   |-- frontend
+|   |   `-- recursos
+|   |       `-- README.md
+|   |-- paginas
+|   |   |-- README.md
+|   |   |-- checkout.py
+|   |   |-- detalle.py
+|   |   |-- home.py
+|   |   |-- listado.py
+|   |   `-- login.py
+|   `-- recursos
+|       `-- README.md
+|-- main.py
+`-- requirements.txt
+
+29 directories, 46 files

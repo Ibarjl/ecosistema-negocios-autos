@@ -11,8 +11,6 @@ Este proyecto implementa un ecosistema digital para el sector automotriz, con un
   - **compartido**  
     Esquemas, constantes y tipos de datos reutilizables en todo el ecosistema.
 
-  - **corporativo**  
-    Web institucional con frontend propio, componentes, estilos y recursos corporativos.
 
   - **mercado**  
     Marketplace para compra/venta de autos, con frontend especializado, componentes, estilos y recursos visuales.
