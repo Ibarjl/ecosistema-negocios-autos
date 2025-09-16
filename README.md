@@ -15,7 +15,15 @@ Este proyecto implementa un ecosistema digital para el sector automotriz, con un
   - **mercado**  
     Marketplace para compra/venta de autos, con frontend especializado, componentes, estilos y recursos visuales.
 
+
 La estructura está pensada para facilitar el desarrollo colaborativo, la reutilización de código y la integración de nuevas funcionalidades.
+
+---
+
+> **¿Primera vez en el proyecto?**
+> Para instrucciones detalladas, ejemplos de código y tareas por rol, revisa el archivo [Quick_Start.md](./Quick_Start.md).
+
+---
 
 ---
 
