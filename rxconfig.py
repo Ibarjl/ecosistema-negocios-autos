@@ -1,6 +1,9 @@
-class Config:
-    app_name = "ecosistema_negocios_autos"
-    db_url = "sqlite:///reflex.db"
-    _app_name_is_valid = True  # <- Añade esta línea
+# rxconfig.py (actualizado)
+import reflex as rx
 
-config = Config()
+config = rx.Config(
+    app_name="main",  # ← Cambiar a "main" porque tu app está en main.py
+    db_url="sqlite:///reflex.db",
+    env=rx.Env.DEV,
+    disable_plugins=['reflex.plugins.sitemap.SitemapPlugin'],  # Silenciar warning
+)

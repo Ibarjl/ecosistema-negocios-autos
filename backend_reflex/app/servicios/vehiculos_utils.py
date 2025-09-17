@@ -4,8 +4,8 @@ Funciones auxiliares y de conveniencia para el manejo de vehículos.
 """
 
 from typing import List, Tuple, Optional
-from ..modelos.vehiculo import Vehiculo, TipoMotor, TipoVehiculo
-from .vehiculos_service import vehiculos_service
+from ..modelos.vehiculo import *
+from .vehiculos_service import *
 
 # Ejemplo de uso:
 # resultado = crear_vehiculo_rapido(

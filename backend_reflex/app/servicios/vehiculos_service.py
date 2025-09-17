@@ -8,10 +8,10 @@ from datetime import datetime, timedelta
 from sqlmodel import select, and_, or_, desc, asc, func
 
 # Importar modelos y servicios
-from ..modelos.vehiculo import Vehiculo, TipoMotor, EstadoVehiculo, TipoVehiculo
-from ..modelos.usuario import Usuario, TipoUsuario
-from ..modelos.validaciones import validar_datos_vehiculo
-from .base_datos import db_service, transactional
+from ..modelos.vehiculo import *
+from ..modelos.usuario import *
+from ..modelos.validaciones import *
+from .base_datos import *
 
 class VehiculosService:
     """Servicio para gestión completa de vehículos"""
