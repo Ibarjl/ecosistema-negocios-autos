@@ -41,35 +41,35 @@ La arquitectura facilita la integración de nuevas funcionalidades y la reutiliz
 ## 🚀 Guía rápida para comenzar
 
 1. **Clona el repositorio:**
-   ```bash
-   git clone <URL-del-repositorio>
-   cd ecosistema-negocios-autos
-   ```
+```bash
+git clone <URL-del-repositorio>
+cd ecosistema-negocios-autos
+```
 
 2. **Crea y activa un entorno virtual:**
-   - En Windows:
-     ```bash
-     python -m venv .venv
-     .venv\Scripts\activate
-     ```
-   - En Linux/Mac:
-     ```bash
-     python3 -m venv .venv
-     source .venv/bin/activate
-     ```
+- En Windows:
+  ```bash
+  python -m venv .venv
+  .venv\Scripts\activate
+  ```
+- En Linux/Mac:
+  ```bash
+  python3 -m venv .venv
+  source .venv/bin/activate
+  ```
 
 3. **Instala las dependencias:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
 
 4. **Ejecuta la aplicación (usando Reflex):**
-   ```bash
-   reflex run
-   ```
+```bash
+reflex run
+```
 
 5. **¡Listo!**
-   Ya puedes comenzar a desarrollar y colaborar en el proyecto.
+Ya puedes comenzar a desarrollar y colaborar en el proyecto.
 
 ---
 
