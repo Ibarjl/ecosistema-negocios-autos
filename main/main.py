@@ -1,4 +1,4 @@
-# main.py (actualizado)
+# main/main.py (corregido para nueva versión de Reflex)
 import reflex as rx
 
 # Datos de prueba temporales
@@ -11,30 +11,29 @@ vehiculos_db = [
 def vehiculo_card(vehiculo):
     return rx.card(
         rx.vstack(
-            rx.text(f"Marca: {vehiculo['marca']}", font_weight="bold"),
+            rx.text(f"Marca: {vehiculo['marca']}", weight="bold"),  # font_weight → weight
             rx.text(f"Modelo: {vehiculo['modelo']}"),
             rx.text(f"Precio: €{vehiculo['precio']:,}"),
-            spacing="0.5rem"
+            spacing="2"  # "0.5rem" → "2"
         ),
-        padding="1rem",
-        border="1px solid #e2e8f0"
+        padding="4"  # "1rem" → "4"
     )
 
 def index():
     return rx.container(
         rx.vstack(
-            rx.heading("🚗 AutoMercado", size="2xl"),
+            rx.heading("🚗 AutoMercado", size="8"),  # Corregido ✅
             rx.text("Listado de Vehículos Disponibles"),
             rx.grid(
                 *[vehiculo_card(v) for v in vehiculos_db],
-                columns=[1, 2, 3],  # Responsive: 1 col en móvil, 2 en tablet, 3 en desktop
+                columns="3",  # [1, 2, 3] → "3" (simplificado por ahora)
                 spacing="4"
             ),
-            spacing="2rem",
+            spacing="4",  # "2rem" → "4"
             align="center"
         ),
         max_width="1200px",
-        padding="2rem"
+        padding="4"  # "2rem" → "4"
     )
 
 app = rx.App()
