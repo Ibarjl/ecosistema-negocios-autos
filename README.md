@@ -2,64 +2,84 @@
 # ECOSISTEMA-NEGOCIOS-AUTOS
 **WORK IN PROGRESS!**
 
-Este proyecto implementa un ecosistema digital para el sector automotriz, con una arquitectura modular y escalable en español. Incluye:
+Ecosistema digital modular para el sector automotriz, diseñado para escalar y facilitar el desarrollo colaborativo.
 
-    Plataforma principal que integra funcionalidades de marketplace y web corporativa.
+## 🗂️ Estructura principal del repositorio
 
-  - **backend-compartido**  
-    Lógica de negocio, autenticación, modelos de datos y servicios comunes para todas las aplicaciones.
+```
+backend_rx/         # Lógica de negocio, autenticación, modelos y servicios
+  apps/             # Módulos funcionales: autenticación, mercado, modelos, servicio
+compartido/         # Constantes, esquemas y tipos reutilizables
+frontend_rx/        # Frontend principal: componentes, estados, estilos, páginas
+mercado/            # Marketplace especializado y recursos visuales
+main/               # Entrada principal de la aplicación
+alembic/            # Migraciones de base de datos
+assets/             # Recursos estáticos
+reflex.db           # Base de datos local
+requirements.txt    # Dependencias del proyecto
+rxconfig.py         # Configuración Reflex
+```
 
-  - **compartido**  
-    Esquemas, constantes y tipos de datos reutilizables en todo el ecosistema.
+## 📦 Módulos principales
 
-  - **mercado**  
-    Marketplace para compra/venta de autos, con frontend especializado, componentes, estilos y recursos visuales.
+- **backend_rx/**: Lógica de negocio, autenticación, modelos de datos y servicios comunes.
+- **compartido/**: Esquemas, constantes y tipos de datos reutilizables en todo el ecosistema.
+- **frontend_rx/**: Componentes, estados, estilos y páginas del frontend principal.
+- **mercado/**: Marketplace para compra/venta de autos, frontend especializado y recursos visuales.
+- **main/**: Punto de entrada de la aplicación.
 
-
-La estructura está pensada para facilitar el desarrollo colaborativo, la reutilización de código y la integración de nuevas funcionalidades.
+La arquitectura facilita la integración de nuevas funcionalidades y la reutilización de código.
 
 ---
 
 > **¿Primera vez en el proyecto?**
-> Para instrucciones detalladas, ejemplos de código y tareas por rol, revisa el archivo [Quick_Start.md](./Quick_Start.md).
-> Para instrucciones de Reflex, practicar código y aprender, revisa el archivo [Aprendizaje_reflex.md](./Aprendizaje_reflex.md).
+> - Para instrucciones detalladas y ejemplos, revisa [Quick_Start.md](./Quick_Start.md).
+> - Para aprender Reflex y practicar, revisa [Aprendizaje_reflex.md](./Aprendizaje_reflex.md).
 
 ---
 
----
-
-## 🚀 Cómo comenzar a trabajar en el repositorio
+## 🚀 Guía rápida para comenzar
 
 1. **Clona el repositorio:**
-```bash
-git clone <URL-del-repositorio>
-cd ecosistema-negocios-autos
-```
+   ```bash
+   git clone <URL-del-repositorio>
+   cd ecosistema-negocios-autos
+   ```
 
-2. **Crea un entorno virtual:**
-```bash
-python -m venv .venv
-```
+2. **Crea y activa un entorno virtual:**
+   - En Windows:
+     ```bash
+     python -m venv .venv
+     .venv\Scripts\activate
+     ```
+   - En Linux/Mac:
+     ```bash
+     python3 -m venv .venv
+     source .venv/bin/activate
+     ```
 
-3. **Activa el entorno virtual:**
-- En Windows:
-```bash
-.venv\Scripts\activate
-```
-- En Linux/Mac:
-```bash
-source .venv/bin/activate
-```
+3. **Instala las dependencias:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-4. **Instala las dependencias:**
-```bash
-pip install -r requirements.txt
-```
+4. **Ejecuta la aplicación (usando Reflex):**
+   ```bash
+   reflex run
+   ```
 
-5. **Ejecuta la aplicación:**
-- Si usas Reflex:
-```bash
-reflex run
+5. **¡Listo!**
+   Ya puedes comenzar a desarrollar y colaborar en el proyecto.
 
-6. **¡Listo!**
-Ya puedes comenzar a desarrollar y colaborar en el proyecto.
+---
+
+## 🤝 Recomendaciones para colaboradores
+
+- Sigue la estructura modular para nuevas funcionalidades.
+- Documenta tus cambios y actualiza los archivos relevantes.
+- Usa entornos virtuales para evitar conflictos de dependencias.
+- Revisa los archivos de ayuda y ejemplos antes de comenzar.
+
+---
+
+¿Dudas o sugerencias? Abre un issue o contacta a los mantenedores.
