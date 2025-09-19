@@ -1,36 +1,42 @@
 """
-Página Login
+Página Registro
 
-Implementa la página de inicio de sesión para usuarios del marketplace.
+Implementa la página de registro para nuevos usuarios del marketplace.
 """
 import reflex as rx
 from frontend_rx.estados.auth import AuthState
 from frontend_rx.componentes.layout import layout
 
-def login_page():
-    """Página de inicio de sesión."""
+def registro_page():
+    """Página de registro de nuevos usuarios."""
     return layout(
         rx.center(
             rx.card(
                 rx.vstack(
-                    rx.heading("Iniciar Sesión", size="6", text_align="center"),
-                    rx.text("Accede a tu cuenta de AutoMercado", 
+                    rx.heading("Crear Cuenta", size="6", text_align="center"),
+                    rx.text("Únete a AutoMercado y encuentra tu vehículo ideal", 
                            color="gray", 
                            text_align="center"),
                     
                     rx.vstack(
                         rx.input(
+                            placeholder="Nombre completo",
+                            value=AuthState.register_name,
+                            on_change=AuthState.set_register_name,
+                            width="100%"
+                        ),
+                        rx.input(
                             placeholder="Email",
                             type="email",
-                            value=AuthState.login_email,
-                            on_change=AuthState.set_login_email,
+                            value=AuthState.register_email,
+                            on_change=AuthState.set_register_email,
                             width="100%"
                         ),
                         rx.input(
                             placeholder="Contraseña",
                             type="password",
-                            value=AuthState.login_password,
-                            on_change=AuthState.set_login_password,
+                            value=AuthState.register_password,
+                            on_change=AuthState.set_register_password,
                             width="100%"
                         ),
                         spacing="3",
@@ -38,8 +44,8 @@ def login_page():
                     ),
                     
                     rx.button(
-                        "Iniciar Sesión",
-                        on_click=AuthState.login,
+                        "Crear Cuenta",
+                        on_click=AuthState.register,
                         width="100%",
                         size="3"
                     ),
@@ -47,16 +53,9 @@ def login_page():
                     rx.divider(),
                     
                     rx.hstack(
-                        rx.text("¿No tienes cuenta?"),
-                        rx.link("Regístrate aquí", href="/registro", color="blue"),
+                        rx.text("¿Ya tienes cuenta?"),
+                        rx.link("Inicia sesión aquí", href="/login", color="blue"),
                         justify="center"
-                    ),
-                    
-                    rx.text(
-                        "Demo: test@test.com / 123456",
-                        color="gray",
-                        size="2",
-                        text_align="center"
                     ),
                     
                     spacing="4",
