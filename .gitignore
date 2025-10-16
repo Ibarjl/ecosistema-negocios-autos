@@ -5,3 +5,4 @@ __pycache__/
 *.db
 assets/external/
 .venv
+/my_reflex_app
